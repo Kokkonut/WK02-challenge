@@ -108,6 +108,7 @@ nav a {
 
     .card {
         flex: 1 1 48%;
+        transition: all 500ms ease-in-out;
     }
 }
 /* REGULAR DESKTOP 769PX and up */
@@ -137,5 +138,6 @@ nav a {
 
     .card {
         flex: 0 1 32%;
+        transition: flex-basis 500ms ease-in-out;
     }
 }
