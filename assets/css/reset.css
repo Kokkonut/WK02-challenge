@@ -1,5 +1,9 @@
 /* CSS Mini Reset */
-
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 html,
 body,
 div,
@@ -47,4 +51,12 @@ td
 img
 {
     border: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }

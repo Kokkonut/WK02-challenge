@@ -2,6 +2,8 @@
 :root {
 --hero-color: #000000;
 --second-color: grey;
+--nav-font: 100%;
+--header-font: 150%
 }
 
 * {
@@ -9,61 +11,59 @@
     margin:0;
     font-family: 'Raleway', sans-serif;
 }
+h1 {
+    font-size: var(--header-font);
+    font-weight: 450;
+}
 
 /* HEADER */
 header {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 10px; 
-} 
+    flex-direction: column;
+    margin-bottom: 2.5em;
 
-.head-top {
+}
+
+#logo-top {
     display: flex;
-    width: 100%;
-    color: var(--second-color);
+    flex-basis: 100%;
+    padding: 0 1em;
     background-color: var(--hero-color);
-    padding-left: 1.5rem;
+    color: var(--second-color)
 }
 
-.head-bot {
-    flex: 0 1 100%;
-
-    color: var(--hero-color);
-    background-color: var(--second-color);
+#logo-bottom {
+    display:flex;
+    flex-basis: 100%;
+    padding: 0 1em;
     border-radius: 0 0 0 20px;
-    padding-left: 1.5rem;
-}
-/* --------------------------------------------------------- */
-
-
- /* NAV BAR */
-.nav-bar {
-    display: flex;
-    flex: 1 0 1;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
- }
-
-nav ul {
     background-color: var(--second-color);
-    align-items: center;
+    color: var(--hero-color);
+}
+
+#logo-bottom-container {
     display: flex;
-    padding-right: 1.5rem;
-    min-height: 100%;
-    gap: 10px;
-    color: darkorange;
+    align-items: center;
+    padding-right: 1em;
+    background-color: var(--second-color);
+    border-radius: 0 0 20px 20px;
 }
 
-nav li {
-    list-style: none;
+#header-nav ul {
+    display: flex;
+    gap: 5px;
 }
 
-nav a {
-    text-decoration: none;
+
+#header-nav a {
+    font-size: var(--nav-font);
+    color: var(--hero-color);
+}
+
+#header-nav a:hover, #header-nav a:active {
     color: white;
 }
+
 /* ------------------------------------------------------------- */
 
 /* SPLASH IMAGE */
