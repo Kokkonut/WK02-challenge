@@ -160,6 +160,14 @@ footer {
     color:var(--second-color);
 }
 
+footer a {
+    color: var(--second-color);
+}
+
+footer a:hover {
+    color: white;
+}
+
 #email::before {
     content: "@";
 }
@@ -189,7 +197,7 @@ footer {
         margin-bottom: 10px;
     }
                         
-    #card-1 .card-image{
+    #card-1 .card-image {
         width: 100%;
     }
 
@@ -202,11 +210,9 @@ footer {
     .card {  
         flex: 1 1 48%;
         transition: all 500ms ease-in-out;
-    }
-    a {
-        color: var(--second-color)
-    }
+    }   
 }
+
 /* REGULAR DESKTOP 769PX and up */
 @media screen and (min-width: 769px) {
     .cata {
