@@ -107,8 +107,15 @@ header {
 }
 
 .card-image img {
+    filter: grayscale(80%);
+    -webkit-filter: grayscale(80%);
     width: 100%;
     object-fit: cover;
+}
+
+.card-image img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
 }
 
 .card-txt {
