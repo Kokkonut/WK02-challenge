@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
 :root {
 --hero-color: #000000;
 --second-color: grey;
@@ -21,8 +21,14 @@ header {
     display: flex;
     flex-direction: column;
     margin-bottom: 2.5em;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    box-shadow: 0 5px 20px white;
+    z-index: 1; */
+    }
 
-}
 
 #logo-top {
     display: flex;
@@ -72,7 +78,7 @@ header {
     justify-content: space-between;
     text-align: center;
     flex: 0 1 100%;
-    margin-bottom: 1.5em;
+    margin: 0 0 1.5em;
 }
 
 .about-heading {
@@ -89,7 +95,12 @@ header {
     justify-content: end;
     margin-left: 1em;
 }
-/* Project Portfolio */
+
+.about-content p {
+    font-weight: 100;
+}
+
+/* MAIN CATALOG */
 .cata {
     display: flex;
     flex-direction: column;
@@ -106,6 +117,8 @@ header {
     flex-direction: column;
     align-items: center;
     transition: flex-basis 500ms ease-in-out;
+    color: black;
+    font-weight: 400;
 }
 
 .card-image {
@@ -125,13 +138,37 @@ header {
 .card-image img:hover {
     filter: none;
     -webkit-filter: grayscale(0);
+    transition: all 1s ease-in-out;
 }
 
 .card-txt {
     width: 100%;
-    background-color: var(--second-color);
+    padding: 5px 0;
+    background-color: var(--hero-color);
+    color: var(--second-color);
+    text-align: center;
 }
 
+/* FOOTER / CONTACT */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5em 0;
+    margin-top: 2.5em;
+    background-color: var(--hero-color);
+    color:var(--second-color);
+}
+
+#email::before {
+    content: "@";
+}
+
+#git,
+#email,
+#linkedin {
+    display: flex;
+}
 
 
 /* DEFAULT SCALLING 320x480 */
@@ -149,6 +186,7 @@ header {
         flex: 0 0 100%;
         max-height: 200px;
         padding-bottom: 20px;
+        margin-bottom: 10px;
     }
                         
     #card-1 .card-image{
@@ -164,6 +202,9 @@ header {
     .card {  
         flex: 1 1 48%;
         transition: all 500ms ease-in-out;
+    }
+    a {
+        color: var(--second-color)
     }
 }
 /* REGULAR DESKTOP 769PX and up */
