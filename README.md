@@ -29,6 +29,10 @@ Project 3 "card" will on ocasion not resize correctly, I think it has something 
 
 Was not able to use ::before psuedo class on all footer icons due to no available unicode, instead used imported CSS file from font-awesome. ::before still used for one icon making css a little messy.
 
+Use of imported stylesheets and fonts has had an adverse effect on page loading performance.
+
+Use of VERY large images has also had a negative impact on page load times.
+
 
 ## Code refrances
 
